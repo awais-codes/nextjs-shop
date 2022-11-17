@@ -11,5 +11,13 @@
   "printWidth": 100,
   "quoteProps": "as-needed",
   "tabWidth": 2,
-  "useTabs": false
+  "useTabs": false,
+  "overrides": [
+    {
+      "files":["*.config.js"],
+      "options": {
+        "printWidth": 80
+      }
+    }
+  ]
 }

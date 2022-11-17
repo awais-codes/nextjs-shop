@@ -26,5 +26,6 @@
     "arrow-body-style": "error",
     "linebreak-style": ["error", "unix"],
     "semi": ["error", "never"]
-  }
+  },
+  "ignorePatterns": ["*.config.js"]
 }
