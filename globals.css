@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-theme-border: #dddddd;
+    --color-theme-main: #faedeb;
+  }
+}

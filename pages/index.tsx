@@ -1,11 +1,11 @@
 import Header from '@components/Header'
-import Sidebar from '@components/Sidebar'
+import { HeroBanner } from '@components/HeroBanner'
 import type { NextPage } from 'next'
 
 const Home: NextPage = () => (
   <div>
     <Header />
-    <Sidebar />
+    <HeroBanner />
   </div>
 )
 

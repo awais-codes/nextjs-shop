@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <body className='m-0'>
+      <body>
         <div className='mx-5 my-3'>
           <Main />
         </div>
