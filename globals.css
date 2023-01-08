@@ -6,5 +6,10 @@
   :root {
     --color-theme-border: #dddddd;
     --color-theme-main: #faedeb;
+    --color-theme-main-strong: #f5dad6;
+  }
+
+  html {
+    font-family: 'Poppins', 'sans-serif';
   }
 }

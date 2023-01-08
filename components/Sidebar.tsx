@@ -17,7 +17,7 @@ const Sidebar: React.FC<ISidebar> = ({ routes, open, onClose }) => (
     <Backdrop display={open} />
     <div
       className={classNames(
-        'fixed w-[90%] right-0 top-0 bottom-0 border border-solid border-red-700 h-full bg-white transition-transform duration-300 ease-in-out',
+        'fixed w-[90%] right-0 top-0 bottom-0 border border-solid border-theme-border h-full bg-white transition-transform duration-300 ease-in-out',
         !open ? 'translate-x-full' : '',
         'md:w-full'
       )}>
@@ -27,9 +27,11 @@ const Sidebar: React.FC<ISidebar> = ({ routes, open, onClose }) => (
           <CloseIcon width={18} height={18} />
         </div>
       </div>
-      <ul className='mt-4 list-none'>
+      <ul className='mt-4 list-none bg-theme-main'>
         {routes.map(({ label, path }) => (
-          <li key={path} className='px-4 py-4 border border-solid border-theme-border'>
+          <li
+            key={path}
+            className='px-4 py-4 border border-solid border-theme-border hover:bg-theme-main-strong cursor-pointer'>
             <Link href={path}>{label}</Link>
           </li>
         ))}
