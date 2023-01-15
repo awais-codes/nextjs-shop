@@ -1,9 +1,10 @@
 import Link from 'next/link'
 
+import { FC } from '../types'
 import { Button } from './Button'
 import { H3 } from './Typography'
 
-export const Footer = () => (
+export const Footer: FC = () => (
   <footer>
     <section className='bg-theme-main px-5 py-10'>
       <section className='mb-8'>

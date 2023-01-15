@@ -1,7 +1,9 @@
-import { Backdrop } from '@components/Backdrop'
-import { CloseIcon } from '@components/Icons'
+import { Backdrop } from 'common/components/Backdrop'
+import { CloseIcon } from 'common/components/Icons'
+import { classNames } from 'common/utilities/ui-helpers'
 import Link from 'next/link'
-import { classNames } from 'utilities/ui-helpers'
+
+import { FC } from '../types'
 
 interface ISidebar {
   routes: {
@@ -12,8 +14,8 @@ interface ISidebar {
   onClose: () => void
 }
 
-const Sidebar: React.FC<ISidebar> = ({ routes, open, onClose }) => (
-  <>
+const Sidebar: FC<ISidebar> = ({ routes, open, onClose }) => (
+  <div className='lg:hidden'>
     <Backdrop display={open} />
     <div
       className={classNames(
@@ -37,7 +39,7 @@ const Sidebar: React.FC<ISidebar> = ({ routes, open, onClose }) => (
         ))}
       </ul>
     </div>
-  </>
+  </div>
 )
 
 export default Sidebar

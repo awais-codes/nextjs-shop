@@ -1,11 +1,12 @@
-import { BarsIcon } from '@components/Icons'
+import { BarsIcon } from 'common/components/Icons'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
+import { FC } from '../types'
 import Sidebar from './Sidebar'
 
-const Header: React.FC = () => {
+const Header: FC = () => {
   const [sebardOpen, setSidebarOpen] = useState(false)
 
   return (
