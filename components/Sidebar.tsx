@@ -1,9 +1,8 @@
-import { Backdrop } from 'common/components/Backdrop'
-import { CloseIcon } from 'common/components/Icons'
-import { classNames } from 'common/utilities/ui-helpers'
+import { Backdrop } from 'components/Backdrop'
+import { CloseIcon } from 'components/Icons'
 import Link from 'next/link'
-
-import { FC } from '../types'
+import { FC } from 'types'
+import { classNames } from 'utilities/ui-helpers'
 
 interface ISidebar {
   routes: {
@@ -29,6 +28,7 @@ const Sidebar: FC<ISidebar> = ({ routes, open, onClose }) => (
           <CloseIcon width={18} height={18} />
         </div>
       </div>
+
       <ul className='mt-4 list-none bg-theme-main'>
         {routes.map(({ label, path }) => (
           <li

@@ -1,15 +1,15 @@
 import Link from 'next/link'
+import { FC } from 'types'
 
-import { FC } from '../types'
 import { Button } from './Button'
-import { H3 } from './Typography'
+import { Heading } from './Typography'
 
 export const Footer: FC = () => (
   <footer>
     <section className='bg-theme-main px-5 py-10'>
       <section className='mb-8'>
         <div className='text-center'>
-          <H3>Subscribe To Get Offers In Your Inbox</H3>
+          <Heading level={3}>Subscribe To Get Offers In Your Inbox</Heading>
         </div>
       </section>
       <section className='mb-8'>

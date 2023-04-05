@@ -1,6 +1,6 @@
-import { Card } from 'common/components/Card'
-import { HeroBanner } from 'common/components/HeroBanner'
-import { H2, SuperText } from 'common/components/Typography'
+import { Card } from 'components/Card'
+import { HeroBanner } from 'components/HeroBanner'
+import { Heading, SuperText } from 'components/Typography'
 import type { NextPage } from 'next'
 
 const Home: NextPage = () => (
@@ -8,11 +8,44 @@ const Home: NextPage = () => (
     <HeroBanner />
     {/* featured section */}
     <section className='my-8'>
-      <div className='text-center'>
+      <div className='text-center my-4'>
         <SuperText>Summer Collection</SuperText>
-        <H2>Popular T-Shirts</H2>
+        <Heading level={2}>Popular T-Shirts</Heading>
       </div>
-      <ul className='grid grid-cols-2 justify-items-center gap-y-4'>
+      <ul className='grid grid-cols-2 justify-items-center gap-y-4 md:grid-cols-3 md:gap-y-10 lg:grid-cols-4'>
+        <li className='w-fit'>
+          <Card
+            imageSrc='/assets/images/hero-model.png'
+            priceRange={{
+              from: 1,
+              to: 2,
+            }}
+            superText='women'
+            title='Randi for sale'
+          />
+        </li>
+        <li className='w-fit'>
+          <Card
+            imageSrc='/assets/images/hero-model.png'
+            priceRange={{
+              from: 1,
+              to: 2,
+            }}
+            superText='women'
+            title='Randi for sale'
+          />
+        </li>
+        <li className='w-fit'>
+          <Card
+            imageSrc='/assets/images/hero-model.png'
+            priceRange={{
+              from: 1,
+              to: 2,
+            }}
+            superText='women'
+            title='Randi for sale'
+          />
+        </li>
         <li className='w-fit'>
           <Card
             imageSrc='/assets/images/hero-model.png'

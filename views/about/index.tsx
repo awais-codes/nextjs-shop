@@ -1,11 +1,11 @@
-import { H1 } from 'common/components/Typography'
-import { FC } from 'common/types'
+// import { H1 } from 'components/Typography'
+// import { FC } from 'types'
 
-export const About: FC = () => (
-  <>
-    {/* Page Heading and subtitle */}
-    <section>
-      <H1></H1>
-    </section>
-  </>
-)
+// export const About: FC = () => (
+//   <>
+//     {/* Page Heading and subtitle */}
+//     <section>
+//       <H1></H1>
+//     </section>
+//   </>
+// )

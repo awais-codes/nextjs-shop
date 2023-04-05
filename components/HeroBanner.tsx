@@ -1,5 +1,6 @@
+import { Heading, SuperText } from 'components/Typography'
+
 import { Button } from './Button'
-import { H1, SuperText } from './Typography'
 
 export const HeroBanner: React.FC = () => (
   <div className='py-2'>
@@ -10,7 +11,7 @@ export const HeroBanner: React.FC = () => (
             <SuperText>Women</SuperText>
           </div>
           <div className='mb-4 md:mb-8'>
-            <H1>Slick. Modern. Awesome.</H1>
+            <Heading level={1}>Slick. Modern. Awesome.</Heading>
           </div>
           <div className='flex justify-center md:justify-start'>
             <Button>Shop Collection</Button>

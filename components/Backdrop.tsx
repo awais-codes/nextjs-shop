@@ -1,6 +1,5 @@
-import { classNames } from 'common/utilities/ui-helpers'
-
-import { FC } from '../types'
+import { FC } from 'types'
+import { classNames } from 'utilities/ui-helpers'
 
 export const Backdrop: FC<{ display: boolean }> = ({ display }) => (
   <div
