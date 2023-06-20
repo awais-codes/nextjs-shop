@@ -1,4 +1,4 @@
-import { Heading } from 'components/Typography'
+import { Heading, SuperText } from 'components/Typography'
 
 export const Card: React.FC<{
   imageSrc: string
@@ -10,12 +10,16 @@ export const Card: React.FC<{
   }
 }> = ({ imageSrc, priceRange, superText, title }) => (
   <div className='inline-block border border-red-700 border-solid'>
-    <img src={imageSrc} alt='alt text here' className='h-auto w-32 mb-2 sm:w-56' />
-    <div className='px-4 leading-none'>
-      <p className='text-[10.5px] text-gray-400 uppercase lg:text-sm'>{superText}</p>
-      <Heading level={5}>{title}</Heading>
-      <span className='text-[11px] text-gray-600 font-bold md:text-xs lg:text-sm'>
-        ${priceRange.from} - ${priceRange.to}
+    <img src={imageSrc} alt='alt text here' className='object-cover' />
+    <div className='px-4 mt-2 flex flex-col gap-y-1'>
+      <SuperText>{superText}</SuperText>
+      <Heading level={5}>
+        <div className='leading-[1.1rem]'>{title}</div>
+      </Heading>
+      <span className='text-[11px] text-gray-600 font-bold md:text-xs w-fit'>
+        <span className='text-[10px] md:text-[11px]'>$</span>
+        {priceRange.from} - <span className='text-[10px] md:text-[11px]'>$</span>
+        {priceRange.to}
       </span>
     </div>
   </div>
